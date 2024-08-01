@@ -244,7 +244,7 @@ export const testimonials = [
 
   {
     id: 2,
-    text: "UI/UX designer with 2.4 years of experience. I specialize in creating user-friendly and engaging designs.",
+    text: "I am a UI/UX designer with 2.4 years of experience and an ML & AI developer with 1 year of experience. I specialize in creating user-friendly and engaging designs.",
     image: "./images/testimonials/team-2.jpg",
     name: "Lokeshwaran.S",
     role: "(Co-Founder)",

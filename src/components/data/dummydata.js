@@ -46,8 +46,8 @@ export const about = [
     desc: "At New Floraison, we are a team of three passionate professionals dedicated to delivering high-quality products, including websites, presentations, and logos. Our primary focus is on helping our clients efficiently complete their tasks by providing top-notch services. Driven by our motto, ''INNOVATING QUALITY, DELIVERING EXCELLENCE'', we are committed to exceeding expectations and fostering growth.",
     desc1: "Together, we aim to grow and succeed with our clients, ensuring their needs are met with precision and creativity. Join us on this journey to excellence and let's achieve greatness together.",
     cover: "./images/WE.png",
-    PDF:"./images/ppt.pdf",
     PF:"./images/ppt.pdf",
+    PDF:"./images/broucher.pdf",
   },
 ]
 export const services = [
@@ -234,7 +234,7 @@ export const testimonials = [
   
   {
     id: 1,
-    text: "A web developer with over a year of experience. I specialize in creating dynamic and responsive websites.",
+    text: "A web developer and full-stack developer with over 2 years of experience and an AI enthusiast.specialize in creating dynamic and responsive websites.",
     image: "./images/testimonials/team-1.png",
     name: "Naveen.B",
     role: "(Founder)",
@@ -265,7 +265,7 @@ export const testimonials = [
   {
     id: 4,
     text: "VFX artist with 5 years of experience, bringing imagination to life with stunning visual effects and cinematic transformations.",
-    image: "./images/testimonials/team-3.jpg",
+    image: "./images/testimonials/team-4.jpg",
     name: "Anand.V",
     role: "(Team Member)",
     post: "Editor(Expert)",

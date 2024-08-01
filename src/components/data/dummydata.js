@@ -100,7 +100,7 @@ export const project = [
     id: 2,
     icon: <FavoriteBorder />,
     num: "17",
-    title: "PROJECTS COMPLEATED",
+    title: "PROJECTS COMPLETED",
   },
   {
     id: 3,

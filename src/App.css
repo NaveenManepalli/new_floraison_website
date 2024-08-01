@@ -151,6 +151,62 @@ section {
 }
 
 /*---------hero-------------*/
+.primaryBtn,
+.secondaryBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .primaryBtn,
+  .secondaryBtn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .primaryBtn,
+  .secondaryBtn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .primaryBtn,
+  .secondaryBtn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .primaryBtn,
+  .secondaryBtn {
+    font-size: 0.4rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Additional styles for hover, click and other states */
+.about .primaryBtn,
+.about .secondaryBtn {
+  margin: 10px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+.about .primaryBtn:hover,
+.about .secondaryBtn:hover {
+  transform: translateY(-5px) rotate(2deg) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: giggle 0.5s ease-in-out infinite;
+}
+
+.about .primaryBtn.clicked,
+.about .secondaryBtn.clicked {
+  background-color: #fff;
+  color: #007bff;
+}
+
+/* Other styles remain unchanged */
 .heroContent {
   max-width: 100%;
   margin: auto;
@@ -163,13 +219,6 @@ section {
   font-weight: 500;
   color: var(--primaryColor);
 }
-
-.primaryBtn {
-  
-    padding: 10px 20px;
-   
-    font-size: 1rem;
-  }
 
 @media (min-width: 768px) {
   .heroContent {
@@ -299,8 +348,6 @@ section {
   z-index: -1;
 }
 
-
-
 .hero {
   position: relative;
 }
@@ -317,7 +364,6 @@ section {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
-/*---------hero-------------*/
 
 /*---------about-------------*/
 
@@ -339,25 +385,6 @@ section {
   font-weight: 600;
   text-align: center;
   margin-bottom: 30px;
-}
-
-.about .primaryBtn,
-.about .secondaryBtn {
-  margin: 10px;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, background-color 0.3s, color 0.3s;
-}
-
-.about .primaryBtn:hover,
-.about .secondaryBtn:hover {
-  transform: translateY(-5px) rotate(2deg) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  animation: giggle 0.5s ease-in-out infinite;
-}
-
-.about .primaryBtn.clicked,
-.about .secondaryBtn.clicked {
-  background-color: #fff;
-  color: #007bff;
 }
 
 .about .heading {
@@ -474,6 +501,7 @@ section {
   }
 }
 /*---------services-------------*/
+
 /*---------counter-------------*/
 .counter {
   margin-top: 80px;
@@ -488,11 +516,16 @@ section {
   padding: 10px;
 }
 
-.container.grid3.grid4{
-  margin: 20;
-  margin-top:2vh;
+.container.grid3.grid4 {
+  margin: 20px; /* Add unit for margin */
+  margin-top: 2vh;
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensure responsive grid */
+  gap: 10px; /* Add gap between grid items */
+  align-items: center; /* Align items vertically in the center */
 }
+/*---------counter-------------*/
 /*---------counter-------------*/
 
 /*---------portfolio-------------*/

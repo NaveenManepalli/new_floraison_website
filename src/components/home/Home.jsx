@@ -1,7 +1,7 @@
 import React from "react"
 import { About } from "../pages/About"
 import { Contact } from "../pages/Contact"
-import { Counter } from "../pages/Counter"
+
 import { Portfolio } from "../pages/Portfolio"
 import { Services } from "../pages/Services"
 import {TeamMembers } from "../pages/Testimonials"
@@ -13,7 +13,7 @@ export const Home = () => {
       <Hero />
       <About />
       <Services />
-      <Counter />
+
       <Portfolio />
       <TeamMembers />
       <Contact />
